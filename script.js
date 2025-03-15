@@ -16,7 +16,7 @@ document.getElementById('eachExpenses').addEventListener('input', function () {
     function equal(addUp) {
         return addUp
     }
-    document.getElementById('spent').innerHTML = 'Total Expenses =' + ' ' + equal(addUp) + 'naira'
+    document.getElementById('spent').innerHTML = 'Total Expenses =' + ' ' + equal(addUp) + 'naira';
     // console.log('Total Expenses =' + ' ' + (equal(addUp)) + 'naira')
 
 
@@ -26,6 +26,13 @@ document.getElementById('eachExpenses').addEventListener('input', function () {
     console.log(amount)
     let remain = amount - equal(addUp);
     console.log(remain)
-    document.getElementById('remainder').innerHTML = 'The amount remaining from your budget is' + ' ' + remain
+    document.getElementById('remainder').innerHTML = 'The amount remaining from your budget is' + ' ' + remain;
+
+
+function clearall(){
+    document.getElementById('eachExpenses').value = '';
+    document.getElementById('eachExpenses').innerHTML = '';
+
+}
 
 })
