@@ -28,11 +28,13 @@ document.getElementById('eachExpenses').addEventListener('input', function () {
     console.log(remain)
     document.getElementById('remainder').innerHTML = 'The amount remaining from your budget is' + ' ' + remain;
 
-
-function clearall(){
-    document.getElementById('eachExpenses').value = '';
-    document.getElementById('eachExpenses').innerHTML = '';
-
-}
-
 })
+// document.getElementById('clearAll').addEventListener('onclick', function () {
+//     const b = document.getElementById('eachExpenses');
+//     eachExpense.value = '';
+// })
+document.getElementById('clearAll').addEventListener('click', function () {
+    const page = document.getElementById('eachExpenses');
+    eachExpenses.value = '';
+})
+
